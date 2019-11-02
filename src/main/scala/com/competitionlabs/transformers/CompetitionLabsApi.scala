@@ -25,12 +25,12 @@ trait CompetitionLabsApi extends CompetitionLabsApiHttp {
 	/**
 	  * Your account identifier
 	  */
-	val accountId: String
+	def accountId: String
 
 	/**
 	  * Get the space name associated with this account
 	  */
-	val spaceName: String
+	def spaceName: String
 
 	/**
 	  * Get sub accounts for this master account if any exists
