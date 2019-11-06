@@ -36,6 +36,8 @@ trait CompetitionLabsApi extends CompetitionLabsApiHttp {
 	  * Get sub accounts for this master account if any exists
 	  */
 	def subAccounts: Map[String, CompetitionLabsApi]
+	
+	def getSubAccount(spaceName: String): Option[CompetitionLabsApi]
 
 	/**
 	  * Insert an event into your CompetitionLabs space
